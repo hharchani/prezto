@@ -11,3 +11,20 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+HISTFILE=~/.zhistfile
+HISTSIZE=5000
+SAVEHIST=150000
+setopt appendhistory autocd extendedglob nomatch notify
+unsetopt beep
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+#zstyle :compinstall filename '/home/ubuntu/.zshrc'
+
+#autoload -Uz compinit
+#compinit
+# End of lines added by compinstall
+
+source "${ZDOTDIR:-$HOME}/.aliases.sh"
+
