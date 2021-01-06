@@ -26,6 +26,10 @@ bindkey -e
 #compinit
 # End of lines added by compinstall
 
+alias p="cd .."
+alias rm="rm -i"
+alias mv="mv -i"
+
 if [[ -s source "${ZDOTDIR:-$HOME}/.aliases.sh" ]]; then
   source "${ZDOTDIR:-$HOME}/.aliases.sh"
 fi
