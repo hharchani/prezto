@@ -30,7 +30,7 @@ alias p="cd .."
 alias rm="rm -i"
 alias mv="mv -i"
 
-if [[ -s source "${ZDOTDIR:-$HOME}/.aliases.sh" ]]; then
+if [[ -s "${ZDOTDIR:-$HOME}/.aliases.sh" ]]; then
   source "${ZDOTDIR:-$HOME}/.aliases.sh"
 fi
 
