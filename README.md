@@ -19,9 +19,9 @@ version is **4.3.11**.
 
 02. Clone the repository:
 
-    ```console
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-    ```
+     ```console
+     git clone --recursive https://github.com/hharchani/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+     ```
 
     <details>
       <summary><em>Optional: Installing in <code>$XDG_CONFIG_HOME</code></em></summary>
@@ -44,6 +44,10 @@ version is **4.3.11**.
         [[ -d $XDG_CONFIG_HOME/zsh ]] && export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
         source "$ZDOTDIR/.zshenv"
         ```
+	- Change default shell
+     	```console
+     	sudo chsh -s /bin/zsh ubuntu
+     	```
 
     </details>
 
